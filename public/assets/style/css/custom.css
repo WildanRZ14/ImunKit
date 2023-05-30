@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-nav {
+    background-color: #62cdff;
+}
+
+.nav-color-white {
+    color: #F3F3F3;
+}
+
+.nav-color-white:hover {
+    color: #FFFFFF;
+}
+
+
+/* style login-start */
+.bgLogin {
+    background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
+    background-position: center;
+}
+
+.inputWithIcon {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inputWithIcon input {
+    padding-left: 40px;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    padding: 9px 8px;
+    color: #1a7ab9;
+}
+
+.card {
+    box-shadow: 0 3px 20px rgb(209, 209, 209);
+}
+
+.buttonlogin {
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
+}
+
+.buttonlogin:hover {
+    box-shadow: 0 0 5pt 0.5pt #62CDFF;
+}
+
+.inputlogin {
+    border: solid 1.5px white;
+}
+
+.inputlogin:hover {
+    box-shadow: 0 0 5pt 0.5pt white;
+}
+
+.inputlogin:focus {
+    box-shadow: 0 0 5pt 2pt white;
+    outline-width: 0px;
+}
+
+.inforeg {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+.inforeg a {
+    color: rgb(28, 28, 197);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* style login-end */
