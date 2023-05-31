@@ -9,7 +9,7 @@ body {
 }
 
 .bg-nav {
-    background-color: #62cdff;
+    background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
 }
 
 .nav-color-white {
@@ -87,3 +87,23 @@ body {
 }
 
 /* style login-end */
+
+
+/* Landing Page */
+.landingPage{
+    margin-top: 70px;
+    background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
+}
+
+.fitur{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about{
+    background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
+}
+
+.text-justify{
+    text-align: justify;
+}
