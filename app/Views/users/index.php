@@ -22,19 +22,71 @@
    </div>
    <div class="content-wrapper bg-white">
       <!-- Area konten -->
-      <div class="col-lg-12 p-3">
-         <div class="container text-start">
-            <div class="row">
-               <div class="col-lg-auto col-md-auto col-sm-auto" style="font-size: 14px;">
-                  <h1>Profile</h1>
-                  <span>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed natus eos, molestias error asperiores doloribus, totam ex libero soluta neque nulla tempora quasi. Consectetur, saepe culpa. Aliquam ducimus veritatis reiciendis.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde quasi rerum tempora incidunt tempore amet aliquam atque optio necessitatibus eum, quas error accusantium pariatur illo distinctio modi quam quos.
-                  </span>
-               </div>
-            </div>
-         </div>
+      <div class="container">
+    <div class="row mt-5 px-5">
+      <h1 class="text-center mb-3 display-6">Artikel Seputar Bayi</h1>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="" class="card-img-top" alt="Gambar Artikel 1">
+          <div class="card-body">
+            <h5 class="card-title">Judul Artikel 1</h5>
+            <p class="card-text">Deskripsi artikel 1.</p>
+            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
       </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="" class="card-img-top" alt="Gambar Artikel 2">
+          <div class="card-body">
+            <h5 class="card-title">Judul Artikel 2</h5>
+            <p class="card-text">Deskripsi artikel 2.</p>
+            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="" class="card-img-top" alt="Gambar Artikel 3">
+          <div class="card-body">
+            <h5 class="card-title">Judul Artikel 3</h5>
+            <p class="card-text">Deskripsi artikel 3.</p>
+            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="" class="card-img-top" alt="Gambar Artikel 4">
+          <div class="card-body">
+            <h5 class="card-title">Judul Artikel 4</h5>
+            <p class="card-text">Deskripsi artikel 4.</p>
+            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="" class="card-img-top" alt="Gambar Artikel 5">
+          <div class="card-body">
+            <h5 class="card-title">Judul Artikel 5</h5>
+            <p class="card-text">Deskripsi artikel 5.</p>
+            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="" class="card-img-top" alt="Gambar Artikel 6">
+          <div class="card-body">
+            <h5 class="card-title">Judul Artikel 6</h5>
+            <p class="card-text">Deskripsi artikel 6.</p>
+            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       <!-- Area konten -->
    </div>
 

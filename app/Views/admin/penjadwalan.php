@@ -22,19 +22,28 @@
    </div>
    <div class="content-wrapper bg-white">
       <!-- Area Konten -->
-      <div class="col-lg-12 p-3">
-         <div class="container text-start">
-            <div class="row">
-               <div class="col-lg-auto col-md-auto col-sm-auto" style="font-size: 14px;">
-                  <h1>Penjadwalan</h1>
-                  <span>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed natus eos, molestias error asperiores doloribus, totam ex libero soluta neque nulla tempora quasi. Consectetur, saepe culpa. Aliquam ducimus veritatis reiciendis.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde quasi rerum tempora incidunt tempore amet aliquam atque optio necessitatibus eum, quas error accusantium pariatur illo distinctio modi quam quos.
-                  </span>
-               </div>
-            </div>
-         </div>
+   <div class="container px-5">
+    <h3 class="mt-5 mb-3 text-center">Form Jadwal Imunisasi</h3>
+    <form>
+      <div class="mb-3">
+        <label for="judul" class="form-label">Judul</label>
+        <input type="text" class="form-control" id="judul" placeholder="Masukkan judul jadwal imunisasi" required>
       </div>
+      <div class="mb-3">
+        <label for="waktu" class="form-label">Waktu</label>
+        <input type="text" class="form-control" id="waktu" placeholder="Masukkan waktu imunisasi" required>
+      </div>
+      <div class="mb-3">
+        <label for="lokasi" class="form-label">Lokasi</label>
+        <input type="text" class="form-control" id="lokasi" placeholder="Masukkan lokasi imunisasi" required>
+      </div>
+      <div class="mb-3">
+        <label for="deskripsi" class="form-label">Deskripsi</label>
+        <textarea class="form-control" id="deskripsi" rows="3" placeholder="Masukkan deskripsi imunisasi" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary float-end shadow">Submit</button>
+    </form>
+  </div>
 
    </div>
 

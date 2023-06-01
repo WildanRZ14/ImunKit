@@ -107,3 +107,7 @@ body {
 .text-justify{
     text-align: justify;
 }
+
+.container{
+    font-family: 'Poppins', sans-serif;
+}

@@ -22,17 +22,69 @@
    </div>
    <div class="content-wrapper bg-white">
       <!-- Area konten -->
-      <div class="col-lg-12 p-3">
-         <div class="container text-start">
-            <div class="row">
-               <div class="col-lg-auto col-md-auto col-sm-auto" style="font-size: 14px;">
-                  <h1>Dashboard</h1>
-                  <span>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed natus eos, molestias error asperiores doloribus, totam ex libero soluta neque nulla tempora quasi. Consectetur, saepe culpa. Aliquam ducimus veritatis reiciendis.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde quasi rerum tempora incidunt tempore amet aliquam atque optio necessitatibus eum, quas error accusantium pariatur illo distinctio modi quam quos.
-                  </span>
+      <div class="container px-5">
+         <h3 class="mt-5 mb-3 text-center">Data Registrasi Masuk</h3>
+         <div>
+            <form>
+               <div class="mb-3 row">
+                  <label for="namaOrtu" class="col-sm-2 col-form-label">Nama Orang Tua</label>
+                  <div class="col-sm-10">
+                     <input type="text" class="form-control" id="namaOrtu" placeholder="Masukkan Nama Orang Tua" required>
+                  </div>
                </div>
-            </div>
+               <div class="mb-3 row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                     <input type="text" class="form-control" id="email" placeholder="Masukkan Email" required>
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="username" class="col-sm-2 col-form-label">Username</label>
+                  <div class="col-sm-10">
+                     <input type="text" class="form-control" id="username" placeholder="Masukkan Username" required>
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="password" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                     <input type="text" class="form-control" id="password" placeholder="Masukkan Password" required>
+                  </div>
+               </div>
+               <button type="submit" class="btn btn-primary float-end shadow">Submit</button>
+            </form>
+         </div>
+         <div class="mt-4 pt-5">
+            <h4 class="text-center">Tabel Data</h4>
+            <table class="table table-secondary mt-3">
+               <thead>
+                  <tr class="table-primary">
+                     <th>#</th>
+                     <th>Nama</th>
+                     <th>Umur</th>
+                     <th>Alamat</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>1</td>
+                     <td>John Doe</td>
+                     <td>30</td>
+                     <td>Jakarta</td>
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                     <td>Jane Smith</td>
+                     <td>25</td>
+                     <td>Bandung</td>
+                  </tr>
+                  <tr>
+                     <td>3</td>
+                     <td>Michael Johnson</td>
+                     <td>35</td>
+                     <td>Surabaya</td>
+                  </tr>
+               </tbody>
+            </table>
          </div>
       </div>
       <!-- Area konten -->
