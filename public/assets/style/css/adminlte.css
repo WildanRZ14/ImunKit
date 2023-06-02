@@ -28790,6 +28790,7 @@ html.maximized-card {
 
 .card-text {
   clear: both;
+  text-align: justify;
 }
 
 .btn-tool {

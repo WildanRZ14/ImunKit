@@ -22,20 +22,39 @@
    </div>
    <div class="content-wrapper bg-white">
       <!-- Area Konten -->
-      <div class="col-lg-12 p-3">
-         <div class="container text-start">
-            <div class="row">
-               <div class="col-lg-auto col-md-auto col-sm-auto" style="font-size: 14px;">
-                  <h1>Pendaftaran</h1>
-                  <span>
-                     ipsum dolor sit amet consectetur, adipisicing elit. Sed natus eos, molestias error asperiores doloribus, totam ex libero soluta neque nulla tempora quasi. Consectetur, saepe culpa. Aliquam ducimus veritatis reiciendis.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde quasi rerum tempora incidunt tempore amet aliquam atque optio necessitatibus eum, quas error accusantium pariatur illo distinctio modi quam quos.
-                  </span>
-               </div>
-            </div>
-         </div>
+      <div class="container px-5">
+    <h3 class="mt-5 mb-3 text-center">Pendaftaran Imunisasi</h3>
+    <form>
+      <div class="mb-3">
+        <label for="parent" class="form-label">Nama Orang Tua</label>
+        <input type="text" class="form-control" id="parent" placeholder="Masukkan nama orang tua" required>
       </div>
-
+      <div class="mb-3">
+        <label for="nama-bayi" class="form-label">Nama Bayi</label>
+        <input type="text" class="form-control" id="nama-bayi" placeholder="Masukkan nama bayi" required>
+      </div>
+      <div class="mb-3">
+      <label for="tempat-lahir" class="form-label">Tempat Lahir Bayi:</label>
+      <input type="text" id="tempat-lahir" placeholder="Masukkan tempat lahir" required> 
+      <label for="tanggal-lahir" class="form-label">Tanggal Lahir Bayi:</label>
+      <input type="date" id="tanggal-lahir" placeholder="Masukkan tanggal lahir" required>
+      </div>
+      <div class="mb-3">
+        <label for="usia" class="form-label">Usia Bayi</label>
+        <input type="number" class="form-control" id="usia" placeholder="Masukkan usia bayi" required>
+      </div>
+      <div class="mb-3">
+       <label for="gender" class="form-label">Jenis Kelamin</label>
+    <input type="radio" id="gender" value="male"> Laki-laki
+    <input type="radio" id="kelamin" value="female"> Perempuan
+      </div>
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat</label>
+        <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan alamat" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary float-end shadow">Submit</button>
+    </form>
+      </div>
    </div>
 
 
