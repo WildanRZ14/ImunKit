@@ -45,8 +45,10 @@
       </div>
       <div class="mb-3">
        <label for="gender" class="form-label">Jenis Kelamin</label>
-    <input type="radio" id="gender" value="male"> Laki-laki
-    <input type="radio" id="kelamin" value="female"> Perempuan
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="male">Laki-Laki</label>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">Perempuan</label>
       </div>
       <div class="mb-3">
         <label for="alamat" class="form-label">Alamat</label>
