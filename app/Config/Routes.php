@@ -41,6 +41,7 @@ $routes->get('/register', "Home::register");
 $routes->group('administrator', static function ($routes) {
     $routes->get('/', 'Admin\Dashboard::index');
     $routes->get('penjadwalan', 'Admin\Penjadwalan::index');
+    $routes->get('datapendaftar', 'Admin\Datapendaftar::index');
 });
 $routes->group('users', static function ($routes) {
     $routes->get('/', 'Users\Profile::index');

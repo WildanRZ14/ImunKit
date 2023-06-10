@@ -23,9 +23,9 @@
    <div class="content-wrapper bg-white">
       <!-- Area konten -->
       <div class="container">
-    <div class="row mt-5 px-5">
-      <h1 class="text-center mb-3 display-6">Artikel Seputar Bayi</h1>
-      <div class="col-sm-6 col-lg-4">
+    <div class="row mt-8 px-6">
+      <h1 class="text-center mt-4 mb-4 display-6">Artikel Seputar Bayi</h1>
+      <div class="col-md-4">
         <div class="card mb-4">
           <img src="<?= base_url('assets/images/pic1.png'); ?>" class="card-img-top" alt="Gambar Artikel 1">
           <div class="card-body">
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-md-4">
         <div class="card mb-4">
           <img src="<?= base_url('assets/images/pic2.png'); ?>" class="card-img-top" alt="Gambar Artikel 2">
           <div class="card-body">
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-md-4">
         <div class="card mb-4">
           <img src="<?= base_url('assets/images/pic3.png'); ?>" class="card-img-top" alt="Gambar Artikel 3">
           <div class="card-body">
@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-md-4">
         <div class="card mb-4">
           <img src="<?= base_url('assets/images/pic4.png'); ?>" class="card-img-top" alt="Gambar Artikel 4">
           <div class="card-body">
@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-md-4">
         <div class="card mb-4">
           <img src="<?= base_url('assets/images/pic5.png'); ?>" class="card-img-top" alt="Gambar Artikel 5">
           <div class="card-body">
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-md-4">
         <div class="card mb-4">
           <img src="<?= base_url('assets/images/pic6.png'); ?>" class="card-img-top" alt="Gambar Artikel 6">
           <div class="card-body">
