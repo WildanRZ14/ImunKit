@@ -111,3 +111,15 @@ body {
 .container{
     font-family: 'Poppins', sans-serif;
 }
+
+/* dashboard user */
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .article-body {
+    flex-grow: 1;
+  }
