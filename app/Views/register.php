@@ -8,7 +8,6 @@
     <title>Aplikasi ImunKit</title>
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/style/css/bootstrap.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>/assets/style/js/bootstrap.min.js">
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/style/css/custom.css">
 </head>
 
@@ -25,27 +24,30 @@
                                     <hr>
                                 </div>
 
-                                <form action="<?= base_url('/administrator'); ?>" method="get">
-                                    <div class="form-group">
+                                <form action="<?= base_url('/register/auth'); ?>" method="post">
+                                    <div class="form-group">                                     
                                         <div class="inputWithIcon">
-                                            <input type="text" name="nama" autofocus
-                                                class="form-control form-control-user" placeholder="Masukan Nama">
-                                            <i class="fa fa-list fa-lg fa-fw" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="inputWithIcon">
-                                            <input type="text" name="username" autofocus
-                                                class="form-control form-control-user" placeholder="Masukan Username">
+                                            <input type="text" name="email" autofocus
+                                                class="form-control form-control-user" placeholder="Masukan email" required>
                                             <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                                         </div>
+
+                                        <div class="inputWithIcon">
+                                            <input type="text"name="username" autofocus
+                                                class="form-control form-control-user" placeholder="Masukan Username" required>
+                                            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                                        </div>
+
                                         <div class="form-group">
                                             <div class="inputWithIcon">
                                                 <input type="password" class="form-control form-control-user"
-                                                    name="password" placeholder="Masukan Password">
+                                                    name="password" placeholder="Masukan Password" required>
                                                 <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
                                             </div>
+
                                             <div class="inputWithIcon">
                                                 <input type="password" class="form-control form-control-user"
-                                                    name="repassword" placeholder="Masukan Password">
+                                                    name="repassword" placeholder="Masukan Password" required>
                                                 <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
                                             </div>
 
@@ -66,8 +68,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </body>
 
