@@ -22,19 +22,34 @@
    </div>
    <div class="content-wrapper bg-white">
       <!-- Area Konten -->
-      <div class="col-lg-12 p-3">
-         <div class="container text-start">
-            <div class="row">
-               <div class="col-lg-auto col-md-auto col-sm-auto" style="font-size: 14px;">
-                  <h1>Pemantauan</h1>
-                  <span>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed natus eos, molestias error asperiores doloribus, totam ex libero soluta neque nulla tempora quasi. Consectetur, saepe culpa. Aliquam ducimus veritatis reiciendis.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde quasi rerum tempora incidunt tempore amet aliquam atque optio necessitatibus eum, quas error accusantium pariatur illo distinctio modi quam quos.
-                  </span>
+      <div class="pemantauan">
+         <div class="container bg-white shadow" id="add-todo">
+            <h3 class="container-header text-center">Imunisasi yang harus dilakukan</h3>
+            <form class="form" action="#" id="form">
+               <div class="form-group form-title">
+                  <label for="title">Masukkan imunisasi yang akan dilakukan</label>
+                  <input type="text" id="title" name="title" required>
                </div>
+               <div class="form-group form-title">
+                  <label for="date">Masukkan tanggal imunisasi</label>
+                  <input type="date" id="date" name="date" required>
+               </div>
+               <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+         </div>
+         <div class="container">
+            <h3 class="container-header">Imunisasi selanjutnya</h3>
+            <div class="list-item" id="todos">
+            </div>
+         </div>
+         <div class="container">
+            <h3 class="container-header">Imunisasi yang sudah dilakukan</h3>
+            <div class="list-item" id="completed-todos">
             </div>
          </div>
       </div>
+
+   </div>
 
    </div>
 
@@ -43,6 +58,7 @@
    <script src="<?= base_url(); ?>/assets/style/js/bootstrap.bundle.min.js"></script>
    <script src="<?= base_url(); ?>/assets/style/js/adminlte.min.js"></script>
    <script src="<?= base_url(); ?>/assets/fontawesome/js/all.min.js"></script>
+   <script src="<?= base_url(); ?>/assets/fontawesome/js/script.js"></script>
 </body>
 
 </html>
