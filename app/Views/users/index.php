@@ -29,15 +29,15 @@
 
         use function App\Controllers\Users\limitWords;
 
-        if ($news) : ?>
+        if (!empty($news)) : ?>
           <?php foreach ($news as $article) : ?>
-            <div class="col-md-4">
-              <div class="card article-card mb-4">
-                <img src="<?= $article->urlToImage ?>" class="card-img-top" alt="Gambar Artikel">
+            <div class="col-md-4 py-3">
+              <div class="card article-card mb-4 shadow">
+                <img src="<?= $article['urlToImage'] ?>" class="card-img-top" alt="Gambar Artikel">
                 <div class="card-body article-body">
-                  <h5 class="card-title"><?= $article->title ?></h5>
-                  <p class="card-text"><?= limitWords($article->description, 20) ?></p>
-                  <a href="<?= $article->url ?>" class="btn btn-primary">Baca Selengkapnya</a>
+                  <h5 class="card-title fw-bold mb-2"><?= limitWords($article['title'], 8) ?> ...</h5>
+                  <p class="card-text"><?= limitWords($article['description'], 8) ?> ...</p>
+                  <a href="<?= $article['url'] ?>" class="btn btn-primary">Baca Selengkapnya</a>
                 </div>
               </div>
             </div>

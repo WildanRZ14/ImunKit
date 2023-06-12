@@ -3,41 +3,30 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use Config\API;
+use jcobhams\NewsApi\NewsApi;
 
 class NewsModel extends Model
 {
-    protected $apiKey;
+    protected $newsApi;
 
     public function __construct($apiConfig = null)
     {
         parent::__construct($apiConfig);
-        $this->apiKey = config(API::class)->newsAPIKey;
+        $this->newsApi = new NewsApi('ea1b061e351e451dad78a3be5ed14915');
     }
 
     public function getNews()
     {
-        $client = \Config\Services::curlrequest();
-
-        $query = http_build_query([
-            'q' => 'Immunization for babies',
-            'apiKey' => $this->apiKey
-        ]);
-
-        $url = 'https://newsapi.org/v2/everything?' . $query;
-
-        $response = $client->request('GET', $url);
-
-        if ($response->getStatusCode() === 200) {
-            $data = json_decode($response->getBody());
-
-            if ($data->totalResults > 0) {
-                return $data->articles;
-            } else {
-                return [];
-            }
-        } else {
-            throw new \Exception($response->getBody());
+        try {
+            $all_articles = $this->newsApi->getEverything('Immunization for babies');
+    
+            $articles = $all_articles->articles;
+            $articles = json_decode(json_encode($articles), true);
+    
+            return $articles;
+        } catch (\Exception $e) {
+            log_message('error', 'News API Error: ' . $e->getMessage());
+            return []; // Mengembalikan array kosong jika terjadi kesalahan
         }
     }
 }
