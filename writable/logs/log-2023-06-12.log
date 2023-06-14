@@ -22,3 +22,45 @@ WARNING - 2023-06-12 13:18:47 --> [DEPRECATED] Creation of dynamic property jcob
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ImunKit\\ImunKit\\public\\index.php')
+INFO - 2023-06-12 13:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-12 13:23:23 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
+WARNING - 2023-06-12 13:23:40 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
+WARNING - 2023-06-12 13:23:56 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
+INFO - 2023-06-12 13:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 13:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-12 13:38:56 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')

@@ -10,6 +10,18 @@
    <link rel="stylesheet" href="<?= base_url(); ?>/assets/style/css/custom.css">
    <link rel="stylesheet" href="<?= base_url(); ?>/assets/style/css/adminlte.min.css">
    <link rel="stylesheet" href="<?= base_url(); ?>/assets/fontawesome/css/all.min.css">
+   <style>
+      .card {
+         height: 100%;
+      }
+
+      .card-img-top {
+         width: 100%;
+         height: auto;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+      }
+   </style>
 </head>
 
 <body>
@@ -23,73 +35,52 @@
    <div class="content-wrapper bg-white">
       <!-- Area Konten -->
       <div class="container">
-    <div class="row mt-5 px-5">
-      <h3 class="text-center mb-3">Jadwal Imunisasi</h3>
-      <div class="col-sm-6 col-lg-4">
-        <div class="card mb-4">
-          <img src="" class="card-img-top" alt="Gambar Artikel 1">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel 1</h5>
-            <p class="card-text">Deskripsi artikel 1.</p>
-            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
-          </div>
-        </div>
+         <div class="row mt-5 px-5">
+            <h3 class="text-center mb-3">Jadwal Imunisasi</h3>
+            <?php if (!empty($jadwal)) : ?>
+               <?php
+               // Mengurutkan jadwal berdasarkan tanggal dibuat (tanpa menggunakan created_at)
+               usort($jadwal, function($a, $b) {
+                  return strtotime($b['waktu']) - strtotime($a['waktu']);
+               });
+               ?>
+               <?php foreach ($jadwal as $schedule) : ?>
+                  <div class="col-sm-6 col-lg-4 py-3">
+                     <div class="card mb-6">
+                        <img class="card-img-top" src="https://correcto.id/content/images/th1_2020123009354037473.jpg" alt="Gambar">
+                        <div class="card-body">
+                           <h5 class="card-text text-center mb-3">
+                              <i class="far fa-heart"></i> <?= $schedule['judul'] ?>
+                           </h5>
+                           <p class="card-text">
+                              <i class="fas fa-calendar-alt"></i>
+                              <span class="ml-2"> : <?= $schedule['waktu'] ?></span>
+                           </p>
+                           <p class="card-text">
+                              <i class="fas fa-clock"></i>
+                              <span class="ml-2"> : <?= $schedule['jam'] ?> WIB</span>
+                           </p>
+                           <p class="card-text">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="ml-2"> : <?= $schedule['lokasi'] ?></span>
+                           </p>
+                           <p class="card-text">
+                              <i class="fas fa-info-circle"></i>
+                              <span class="ml-2"> : <?= $schedule['diskripsi'] ?></span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               <?php endforeach; ?>
+            <?php else : ?>
+               <div class="col text-center">
+                  <p>Tidak ada jadwal yang ditemukan.</p>
+               </div>
+            <?php endif; ?>
+         </div>
       </div>
-      <div class="col-sm-6 col-lg-4">
-        <div class="card mb-4">
-          <img src="" class="card-img-top" alt="Gambar Artikel 2">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel 2</h5>
-            <p class="card-text">Deskripsi artikel 2.</p>
-            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <div class="card mb-4">
-          <img src="" class="card-img-top" alt="Gambar Artikel 3">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel 3</h5>
-            <p class="card-text">Deskripsi artikel 3.</p>
-            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <div class="card mb-4">
-          <img src="" class="card-img-top" alt="Gambar Artikel 4">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel 4</h5>
-            <p class="card-text">Deskripsi artikel 4.</p>
-            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <div class="card mb-4">
-          <img src="" class="card-img-top" alt="Gambar Artikel 5">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel 5</h5>
-            <p class="card-text">Deskripsi artikel 5.</p>
-            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <div class="card mb-4">
-          <img src="" class="card-img-top" alt="Gambar Artikel 6">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel 6</h5>
-            <p class="card-text">Deskripsi artikel 6.</p>
-            <a href="#" class="btn btn-primary">Baca selengkapnya</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+      <!-- Area Konten -->
    </div>
-
 
    <script src="<?= base_url(); ?>/assets/style/js/jquery-3.6.1.min.js"></script>
    <script src="<?= base_url(); ?>/assets/style/js/bootstrap.bundle.min.js"></script>
