@@ -49,11 +49,11 @@ $routes->group('register', static function ($routes) {
 });
 $routes->get('/login', "Home::login");
 $routes->get('/register', "Home::register");
-$routes->group('administrator', ['namespace' => 'App\Controllers\Admin'], function ($routes) {
-    $routes->get('/', 'Dashboard::index');
-    $routes->get('penjadwalan', 'Penjadwalan::index');
-    $routes->post('penjadwalan/save', 'Penjadwalan::save', ['as' => 'administrator.penjadwalan.save']);
-    $routes->get('datapendaftar', 'Datapendaftar::index');
+$routes->group('administrator', function ($routes) {
+    $routes->get('/', 'Admin\Dashboard::index');
+    $routes->get('penjadwalan', 'Admin\Penjadwalan::index');
+    $routes->post('penjadwalan/save', 'Admin\Penjadwalan::save');
+    $routes->get('datapendaftar', 'Admin\Datapendaftar::index');
 });
 $routes->group('users', static function ($routes) {
     $routes->get('/', 'Users\Profile::index');

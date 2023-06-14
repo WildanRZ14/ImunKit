@@ -18,21 +18,29 @@ class Penjadwalan extends BaseController
     public function save()
     {
         $model = new JadwalModel();
+    
+        $judul = $this->request->getPost('judul');
+        $waktu = $this->request->getPost('waktu');
+        $jam = $this->request->getPost('jam');
+        $lokasi = $this->request->getPost('lokasi');
+        $diskripsi = $this->request->getPost('diskripsi');
+    
         $data = [
-            'judul' => $this->request->getPost('judul'),
-            'waktu' => $this->request->getPost('waktu'),
-            'jam' => $this->request->getPost('jam'),
-            'lokasi' => $this->request->getPost('lokasi'),
-            'diskripsi' => $this->request->getPost('diskripsi')
+            'judul' => $judul,
+            'waktu' => $waktu,
+            'jam' => $jam,
+            'lokasi' => $lokasi,
+            'diskripsi' => $diskripsi
         ];
-        $saved = $model->insert($data);
-
+        $saved = $model->insert($data); // Menyimpan data dan mengembalikan status penyimpanan
+    
         if ($saved) {
             session()->setFlashdata('success', 'Data jadwal berhasil disimpan!');
         } else {
             session()->setFlashdata('error', 'Gagal menyimpan data jadwal. Silakan coba lagi.');
         }
-
+    
         return redirect()->to(site_url('administrator/penjadwalan'));
     }
+    
 }

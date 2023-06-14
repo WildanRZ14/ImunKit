@@ -14,14 +14,10 @@
 
 <body>
    <div class="wrapper">
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('admin/navbar'); ?>
-
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('admin/sidebar'); ?>
    </div>
    <div class="content-wrapper bg-white">
-      <!-- Area konten -->
       <div class="container px-5">
          <h3 class="mt-5 mb-3 text-center">Data Registrasi Masuk</h3>
          <div>
@@ -87,8 +83,8 @@
             </table>
          </div>
       </div>
-      <!-- Area konten -->
    </div>
+   <?= $this->include('admin/footer'); ?>
 
 
    <script src="<?= base_url(); ?>/assets/style/js/jquery-3.6.1.min.js"></script>

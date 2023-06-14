@@ -15,14 +15,10 @@
 
 <body>
    <div class="wrapper">
-      <!-- Pemanggilan navbar -->
       <?= $this->include('admin/navbar'); ?>
-
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('admin/sidebar'); ?>
    </div>
    <div class="content-wrapper bg-white">
-      <!-- Area Konten -->
       <div class="container px-5">
          <h3 class="mt-5 mb-3 text-center">Form Jadwal Imunisasi</h3>
          <form action="<?= site_url('administrator/penjadwalan/save'); ?>" method="post">
@@ -60,6 +56,7 @@
          </form>
       </div>
    </div>
+   <?= $this->include('admin/footer'); ?>
 
 
    <script src="<?= base_url(); ?>/assets/style/js/jquery-3.6.1.min.js"></script>
@@ -83,7 +80,7 @@
                clear: 'fa fa-trash',
                close: 'fa fa-times'
             },
-            stepping: 15 // Langkah penambahan/jumlah menit yang dapat dipilih
+            stepping: 15
          });
       });
    </script>

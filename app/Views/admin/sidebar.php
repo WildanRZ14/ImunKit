@@ -1,12 +1,8 @@
-<!-- Area Sidebar-->
 <aside class="main-sidebar sidebar-light-primary elevation-4 min-vh-100" style="background-color: #62CDFF;">
    <a href="<?= base_url(); ?>/administrator" class="brand-link" style="margin-left: 20px;">
       <span class="brand-text font-weight-light" style="color: #FFFFFF;"><i class="fa-solid"></i>&nbsp;ImunKit</span>
    </a>
-
-   <!-- Sidebar -->
    <div class="sidebar">
-      <!-- Menu Sidebar -->
       <nav class="mt-2">        
          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
@@ -29,7 +25,5 @@
             </li>
    
       </nav>
-      <!-- Menu Sidebar -->
    </div>
-   <!-- Sidebar -->
 </aside>

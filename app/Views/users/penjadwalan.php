@@ -26,20 +26,15 @@
 
 <body>
    <div class="wrapper">
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('users/navbar'); ?>
-
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('users/sidebar'); ?>
    </div>
    <div class="content-wrapper bg-white">
-      <!-- Area Konten -->
       <div class="container">
          <div class="row mt-5 px-5">
             <h3 class="text-center mb-3">Jadwal Imunisasi</h3>
             <?php if (!empty($jadwal)) : ?>
                <?php
-               // Mengurutkan jadwal berdasarkan tanggal dibuat (tanpa menggunakan created_at)
                usort($jadwal, function($a, $b) {
                   return strtotime($b['waktu']) - strtotime($a['waktu']);
                });
@@ -79,8 +74,8 @@
             <?php endif; ?>
          </div>
       </div>
-      <!-- Area Konten -->
    </div>
+   <?= $this->include('admin/footer'); ?>
 
    <script src="<?= base_url(); ?>/assets/style/js/jquery-3.6.1.min.js"></script>
    <script src="<?= base_url(); ?>/assets/style/js/bootstrap.bundle.min.js"></script>

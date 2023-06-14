@@ -14,14 +14,10 @@
 
 <body>
   <div class="wrapper">
-    <!-- Pemanggilan sidebar -->
     <?= $this->include('users/navbar'); ?>
-
-    <!-- Pemanggilan sidebar -->
     <?= $this->include('users/sidebar'); ?>
   </div>
   <div class="content-wrapper bg-white">
-    <!-- Area konten -->
     <div class="container">
       <div class="row mt-8 px-6">
         <h1 class="text-center mt-4 mb-4 display-6">Artikel Seputar Bayi</h1>
@@ -49,8 +45,8 @@
         <?php endif; ?>
       </div>
     </div>
-    <!-- Area konten -->
   </div>
+  <?= $this->include('admin/footer'); ?>
 
 
   <script src="<?= base_url(); ?>/assets/style/js/jquery-3.6.1.min.js"></script>

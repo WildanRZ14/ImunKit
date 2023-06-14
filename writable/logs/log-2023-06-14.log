@@ -33,3 +33,39 @@ WARNING - 2023-06-14 14:16:03 --> [DEPRECATED] Creation of dynamic property jcob
  7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
 INFO - 2023-06-14 14:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-14 14:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 14:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-14 14:38:57 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
+INFO - 2023-06-14 15:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 15:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 15:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-14 15:56:59 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
+INFO - 2023-06-14 16:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 16:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-14 16:03:16 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\public\\index.php')
+INFO - 2023-06-14 16:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 16:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

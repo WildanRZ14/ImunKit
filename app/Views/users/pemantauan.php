@@ -14,14 +14,10 @@
 
 <body>
    <div class="wrapper">
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('users/navbar'); ?>
-
-      <!-- Pemanggilan sidebar -->
       <?= $this->include('users/sidebar'); ?>
    </div>
    <div class="content-wrapper bg-white">
-      <!-- Area Konten -->
       <div class="pemantauan">
          <div class="container bg-white shadow" id="add-todo">
             <h3 class="container-header text-center">Imunisasi yang harus dilakukan</h3>
@@ -48,10 +44,9 @@
             </div>
          </div>
       </div>
-
    </div>
-
    </div>
+   <?= $this->include('admin/footer'); ?>
 
 
    <script src="<?= base_url(); ?>/assets/style/js/jquery-3.6.1.min.js"></script>
