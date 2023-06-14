@@ -51,9 +51,13 @@ $routes->get('/login', "Home::login");
 $routes->get('/register', "Home::register");
 $routes->group('administrator', function ($routes) {
     $routes->get('/', 'Admin\Dashboard::index');
+    $routes->post('authAdm', 'Admin\Dashboard::authAdm');
     $routes->get('penjadwalan', 'Admin\Penjadwalan::index');
     $routes->post('penjadwalan/save', 'Admin\Penjadwalan::save');
     $routes->get('datapendaftar', 'Admin\Datapendaftar::index');
+    $routes->get('datapendaftar/getData/(:num)', 'Admin\Datapendaftar::getData/$1');
+    $routes->put('datapendaftar/update/(:num)', 'Admin\Datapendaftar::update/$1');
+    $routes->delete('datapendaftar/delete/(:num)', 'Admin\Datapendaftar::delete/$1');
 });
 $routes->group('users', static function ($routes) {
     $routes->get('/', 'Users\Profile::index');

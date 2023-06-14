@@ -24,7 +24,7 @@
          <form action="<?= site_url('administrator/penjadwalan/save'); ?>" method="post">
             <div class="mb-3">
                <label for="judul" class="form-label">Judul</label>
-               <input type="text" class="form-control" name="judul" id="judul" placeholder="Masukkan judul jadwal imunisasi" required>
+               <input type="text" class="form-control" name="judul" id="judul" placeholder="Masukkan judul" required>
             </div>
             <div class="mb-3">
               <label for="waktu" class="form-label">Waktu</label>

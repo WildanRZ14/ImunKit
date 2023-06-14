@@ -26,7 +26,7 @@
                                 <form action="<?= base_url('/login/auth'); ?>" method="post">
                                     <div class="form-group">
                                         <div class="inputWithIcon">
-                                            <input type="text" name="username" autofocus autocomplete="off" class="form-control form-control-user" placeholder="Masukan email">
+                                            <input type="text" name="username" autofocus autocomplete="off" class="form-control form-control-user" placeholder="Masukan username">
                                             <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
                                         </div>
                                     </div>
