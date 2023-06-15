@@ -54,6 +54,7 @@ $routes->group('administrator', function ($routes) {
     $routes->post('authAdm', 'Admin\Dashboard::authAdm');
     $routes->get('penjadwalan', 'Admin\Penjadwalan::index');
     $routes->post('penjadwalan/save', 'Admin\Penjadwalan::save');
+    $routes->get('datapenjadwalan', 'Admin\Datapenjadwalan::index');
     $routes->get('datapendaftar', 'Admin\Datapendaftar::index');
     $routes->get('datapendaftar/getData/(:num)', 'Admin\Datapendaftar::getData/$1');
     $routes->put('datapendaftar/update/(:num)', 'Admin\Datapendaftar::update/$1');

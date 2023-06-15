@@ -8,7 +8,7 @@ class JadwalModel extends Model
 {
    protected $table = 'tbl_jadwal';
    protected $primaryKey = 'id_judul';
-   protected $allowedFields = ['judul', 'waktu', 'jam', 'lokasi', 'diskripsi'];
+   protected $allowedFields = ['judul', 'waktu', 'jam', 'lokasi', 'diskripsi', 'gambar'];
    protected $returnType       = 'array';
    protected $useTimestamps    = false;
 }

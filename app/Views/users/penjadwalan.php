@@ -17,7 +17,8 @@
 
       .card-img-top {
          width: 100%;
-         height: auto;
+         min-height: 200px;
+         object-fit: cover;
          border-top-left-radius: 10px;
          border-top-right-radius: 10px;
       }
@@ -35,14 +36,19 @@
             <h3 class="text-center mb-3">Jadwal Imunisasi</h3>
             <?php if (!empty($jadwal)) : ?>
                <?php
-               usort($jadwal, function($a, $b) {
+               usort($jadwal, function ($a, $b) {
                   return strtotime($b['waktu']) - strtotime($a['waktu']);
                });
                ?>
                <?php foreach ($jadwal as $schedule) : ?>
                   <div class="col-sm-6 col-lg-4 py-3">
                      <div class="card mb-6">
-                        <img class="card-img-top" src="https://correcto.id/content/images/th1_2020123009354037473.jpg" alt="Gambar">
+                        <?php if (!empty($schedule['gambar'])) : ?>
+                           <img class="card-img-top" src="<?= base_url($schedule['gambar']); ?>" alt="Gambar">
+                        <?php else : ?>
+                           <img class="card-img-top" src="<?= base_url('assets/images/default.jpg'); ?>" alt="Gambar Default">
+                        <?php endif; ?>
+
                         <div class="card-body">
                            <h5 class="card-text text-center mb-3">
                               <i class="far fa-heart"></i> <?= $schedule['judul'] ?>
