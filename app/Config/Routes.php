@@ -55,6 +55,9 @@ $routes->group('administrator', function ($routes) {
     $routes->get('penjadwalan', 'Admin\Penjadwalan::index');
     $routes->post('penjadwalan/save', 'Admin\Penjadwalan::save');
     $routes->get('datapenjadwalan', 'Admin\Datapenjadwalan::index');
+    $routes->get('datapenjadwalan/getData/(:num)', 'Admin\Datapenjadwalan::getData/$1');
+    $routes->put('datapenjadwalan/update/(:num)', 'Admin\Datapenjadwalan::update/$1');
+    $routes->delete('datapenjadwalan/delete/(:num)', 'Admin\Datapenjadwalan::delete/$1');
     $routes->get('datapendaftar', 'Admin\Datapendaftar::index');
     $routes->get('datapendaftar/getData/(:num)', 'Admin\Datapendaftar::getData/$1');
     $routes->put('datapendaftar/update/(:num)', 'Admin\Datapendaftar::update/$1');

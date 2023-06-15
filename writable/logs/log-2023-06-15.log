@@ -1,1 +1,784 @@
 INFO - 2023-06-15 05:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-15 05:26:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Imunkit\ImunKit\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'imunkitv2', 3306, '', 0)
+#1 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Imunkit\ImunKit\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Imunkit\ImunKit\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Imunkit\ImunKit\app\Controllers\Login.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Imunkit\ImunKit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Imunkit\ImunKit\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Imunkit\ImunKit\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Imunkit\ImunKit\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Imunkit\ImunKit\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Imunkit\ImunKit\app\Controllers\Login.php(21): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Imunkit\ImunKit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Imunkit\ImunKit\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-15 05:26:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(21): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 05:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 05:27:37 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 05:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 05:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 05:29:58 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 05:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 05:30:10 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 05:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-15 05:39:04 --> Undefined variable $data
+in APPPATH\Views\admin\datapenjadwalan.php on line 43.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(11): view('admin/datapenjadwalan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:45:14 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:46:34 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:46:35 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:46:36 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:46:36 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:46:36 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:46:37 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:49:09 --> include(admin/navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 19.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 19)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:49:41 --> include(admin/navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 19.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 19)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:49:45 --> include(admin/navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 19.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 19)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:50:03 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:50:26 --> include(admin/navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 19.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 19)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:51:09 --> include(admin/navbar): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 19.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 19)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:51:51 --> include(admin/navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 26.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 26)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(26): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:51:53 --> include(admin/navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\datapenjadwalan.php on line 26.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 26)
+ 2 APPPATH\Views\admin\datapenjadwalan.php(26): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 6 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:52:07 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:52:31 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:52:31 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:53:52 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:53:53 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:53:54 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:56:33 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:56:35 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:56:36 --> Undefined array key "id_judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:56:59 --> Undefined array key "judul"
+in APPPATH\Views\admin\datapenjadwalan.php on line 45.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 05:58:01 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 50.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 06:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 06:09:56 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Helpers\url_helper.php on line 60.
+ 1 SYSTEMPATH\Helpers\url_helper.php(60): strpos(null, '://')
+ 2 SYSTEMPATH\Helpers\url_helper.php(118): _get_uri(null, Object(Config\App))
+ 3 SYSTEMPATH\Helpers\url_helper.php(158): site_url(null, null, Object(Config\App))
+ 4 APPPATH\Views\admin\datapenjadwalan.php(51): base_url(null)
+ 5 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 8 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 06:09:56 --> CodeIgniter\HTTP\URI::removeDotSegments(): Argument #1 ($path) must be of type string, null given, called in C:\xampp\htdocs\Imunkit\ImunKit\system\Helpers\url_helper.php on line 71
+in SYSTEMPATH\HTTP\URI.php on line 197.
+ 1 SYSTEMPATH\Helpers\url_helper.php(71): CodeIgniter\HTTP\URI::removeDotSegments(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(118): _get_uri(null, Object(Config\App))
+ 3 SYSTEMPATH\Helpers\url_helper.php(158): site_url(null, null, Object(Config\App))
+ 4 APPPATH\Views\admin\datapenjadwalan.php(51): base_url(null)
+ 5 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 8 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 06:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-15 06:28:46 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 06:29:05 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 06:29:06 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 06:29:09 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 06:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 06:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 07:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-15 07:03:27 --> move_uploaded_file(): The second argument to copy() function cannot be a directory
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(): The second argument to copy() function cannot be a directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Penjadwalan.php', 44)
+ 2 APPPATH\Controllers\Admin\Penjadwalan.php(44): move_uploaded_file('C:\\xampp\\tmp\\php6430.tmp', 'uploads/PngItem_4531821.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:06:14 --> move_uploaded_file(): The second argument to copy() function cannot be a directory
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(): The second argument to copy() function cannot be a directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Penjadwalan.php', 44)
+ 2 APPPATH\Controllers\Admin\Penjadwalan.php(44): move_uploaded_file('C:\\xampp\\tmp\\phpF0A8.tmp', 'uploads/PngItem_4531821.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:06:18 --> move_uploaded_file(): The second argument to copy() function cannot be a directory
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(): The second argument to copy() function cannot be a directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Penjadwalan.php', 44)
+ 2 APPPATH\Controllers\Admin\Penjadwalan.php(44): move_uploaded_file('C:\\xampp\\tmp\\php21E.tmp', 'uploads/PngItem_4531821.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:11:20 --> Undefined constant "App\Controllers\Admin\el"
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Penjadwalan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Penjadwalan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Penjadwalan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Penjadwalan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:11:32 --> Cannot declare class App\Controllers\Admin\Penjadwalan, because the name is already in use
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-15 07:12:54 --> Undefined constant "App\Controllers\Admin\WRITEABLE_PATH"
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:13:39 --> Undefined constant "App\Controllers\Admin\WRITEABLE_PATH"
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:13:45 --> Undefined constant "App\Controllers\Admin\WRITEABLE_PATH"
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:13:54 --> Undefined constant "App\Controllers\Admin\WRITEABLE_PATH"
+in APPPATH\Controllers\Admin\Penjadwalan.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Penjadwalan->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Penjadwalan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 07:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 07:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 07:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 07:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 07:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-15 07:27:30 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/350750727_2190888601112185_7383914225505345451_n.jpg/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/350750727_2190888601112185_7383914225505345451_n.jpg/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/350750727_2190888601112185_7383914225505345451_n.jpg/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('39')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:30:42 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/350750727_2190888601112185_7383914225505345451_n.jpg/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/350750727_2190888601112185_7383914225505345451_n.jpg/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/350750727_2190888601112185_7383914225505345451_n.jpg/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('39')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:34:09 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/PngItem_4531821.png/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/PngItem_4531821.png/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/PngItem_4531821.png/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('39')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 07:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-15 07:36:58 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/PngItem_4531821.png/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/PngItem_4531821.png/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/PngItem_4531821.png/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('40')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:40:09 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/icons8-day-care-50.png/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/icons8-day-care-50.png/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/icons8-day-care-50.png/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('40')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 07:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-15 07:42:31 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/PngItem_4531821.png/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/PngItem_4531821.png/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/PngItem_4531821.png/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('41')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:42:39 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/PngItem_4531821.png/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/PngItem_4531821.png/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/PngItem_4531821.png/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('41')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:42:52 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\system\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('public/assets/images/jadwal/PngItem_4531821.png/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('public/assets/images/jadwal/PngItem_4531821.png/')
+ 4 APPPATH\Controllers\Admin\Datapenjadwalan.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('public/assets/images/jadwal/PngItem_4531821.png/')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->update('41')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:44:47 --> Call to undefined method CodeIgniter\Autoloader\Autoloader::include()
+in APPPATH\Controllers\Admin\Datapenjadwalan.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Datapenjadwalan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Datapenjadwalan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Datapenjadwalan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Datapenjadwalan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:44:57 --> Call to undefined method CodeIgniter\Autoloader\Autoloader::include()
+in APPPATH\Controllers\Admin\Datapenjadwalan.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Datapenjadwalan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Datapenjadwalan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Datapenjadwalan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Datapenjadwalan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:45:25 --> Call to undefined method CodeIgniter\Autoloader\Autoloader::include()
+in APPPATH\Controllers\Admin\Datapenjadwalan.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Datapenjadwalan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Datapenjadwalan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Datapenjadwalan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Datapenjadwalan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:45:26 --> Call to undefined method CodeIgniter\Autoloader\Autoloader::include()
+in APPPATH\Controllers\Admin\Datapenjadwalan.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Controllers\\Admin\\Datapenjadwalan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Datapenjadwalan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Datapenjadwalan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Datapenjadwalan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:52:35 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 07:55:15 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+CRITICAL - 2023-06-15 08:02:04 --> Undefined array key "deskripsi"
+in APPPATH\Views\admin\datapenjadwalan.php on line 51.
+ 1 APPPATH\Views\admin\datapenjadwalan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\app\\Views\\admin\\datapenjadwalan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/datapenjadwalan', [], true)
+ 5 APPPATH\Controllers\Admin\Datapenjadwalan.php(15): view('admin/datapenjadwalan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapenjadwalan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapenjadwalan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 08:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 08:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 08:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 08:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 08:17:03 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+WARNING - 2023-06-15 08:43:37 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+WARNING - 2023-06-15 08:44:05 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 08:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 09:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 09:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 09:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 09:04:27 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 09:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 09:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 09:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
