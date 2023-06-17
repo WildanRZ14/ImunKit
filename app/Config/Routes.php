@@ -68,6 +68,13 @@ $routes->group('users', static function ($routes) {
     $routes->get('pendaftaran', 'Users\Pendaftaran::index');
     $routes->get('penjadwalan', 'Users\Penjadwalan::index');
     $routes->get('pemantauan', 'Users\Pemantauan::index');
+    $routes->post('pemantauan/authPemantauan', 'Users\Pemantauan::authPemantauan');
+    $routes->post('pemantauan/updateStatus/(:num)', 'Users\Pemantauan::updateStatus/$1');
+    $routes->post('pemantauan/updateStatustoCancel/(:num)', 'Users\Pemantauan::updateStatustoCancel/$1');
+    $routes->get('pemantauan/getData/(:num)', 'Users\Pemantauan::getData/$1');
+    $routes->put('pemantauan/update/(:num)', 'Users\Pemantauan::update/$1');
+    $routes->put('pemantauan/updatefromCancel/(:num)', 'Users\Pemantauan::updatefromCancel/$1');
+    $routes->delete('pemantauan/delete/(:num)', 'Users\Pemantauan::delete/$1');
 
 });
 /*
