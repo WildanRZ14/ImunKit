@@ -782,3 +782,131 @@ WARNING - 2023-06-15 09:04:27 --> [DEPRECATED] Creation of dynamic property jcob
 INFO - 2023-06-15 09:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-15 09:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-15 09:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 10:36:19 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+ERROR - 2023-06-15 10:36:30 --> News API Error: cURL error 6: Could not resolve host: newsapi.org (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://newsapi.org/v2/everything?q=Immunization%20for%20babies&language=en
+INFO - 2023-06-15 10:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 10:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 10:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 10:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 10:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 10:39:04 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+ERROR - 2023-06-15 10:39:04 --> News API Error: cURL error 6: Could not resolve host: newsapi.org (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://newsapi.org/v2/everything?q=Immunization%20for%20babies&language=en
+WARNING - 2023-06-15 10:39:09 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+ERROR - 2023-06-15 10:39:09 --> News API Error: cURL error 6: Could not resolve host: newsapi.org (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://newsapi.org/v2/everything?q=Immunization%20for%20babies&language=en
+WARNING - 2023-06-15 10:39:13 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+ERROR - 2023-06-15 10:39:15 --> News API Error: cURL error 6: Could not resolve host: newsapi.org (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://newsapi.org/v2/everything?q=Immunization%20for%20babies&language=en
+WARNING - 2023-06-15 10:39:25 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+WARNING - 2023-06-15 10:42:32 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+ERROR - 2023-06-15 13:19:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Imunkit\ImunKit\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'imunkitv2', 3306, '', 0)
+#1 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Imunkit\ImunKit\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Imunkit\ImunKit\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Imunkit\ImunKit\app\Controllers\Admin\Datapendaftar.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(934): App\Controllers\Admin\Datapendaftar->index()
+#8 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapendaftar))
+#9 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Imunkit\ImunKit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Imunkit\ImunKit\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Imunkit\ImunKit\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Imunkit\ImunKit\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Imunkit\ImunKit\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Imunkit\ImunKit\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Imunkit\ImunKit\app\Controllers\Admin\Datapendaftar.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(934): App\Controllers\Admin\Datapendaftar->index()
+#7 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapendaftar))
+#8 C:\xampp\htdocs\Imunkit\ImunKit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Imunkit\ImunKit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Imunkit\ImunKit\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-15 13:19:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `akses` = :akses:', [...], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin\Datapendaftar.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Datapendaftar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Datapendaftar))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+WARNING - 2023-06-15 13:30:01 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+INFO - 2023-06-15 13:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-15 13:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-15 13:54:51 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')
+WARNING - 2023-06-15 13:56:41 --> [DEPRECATED] Creation of dynamic property jcobhams\NewsApi\NewsApi::$client is deprecated in VENDORPATH\jcobhams\newsapi\src\NewsApi.php on line 18.
+ 1 APPPATH\Models\NewsModel.php(15): jcobhams\NewsApi\NewsApi->__construct('ea1b061e351e451dad78a3be5ed14915')
+ 2 APPPATH\Controllers\Users\Profile.php(12): App\Models\NewsModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users\Profile->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Profile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Imunkit\\ImunKit\\public\\index.php')

@@ -98,7 +98,7 @@
                         '<div class="form-group">' +
                         '<label for="lokasi">Lokasi</label>' +
                         '<select class="form-control" id="lokasi" name="lokasi" required>' +
-                        '<option value="">Pilih Lokasi</option>' +
+                        '<option value="' + response.lokasi + '">' + response.lokasi + '</option>' +
                         '<option value="Purwokerto Selatan">Purwokerto Selatan</option>' +
                         '<option value="Purwokerto Barat">Purwokerto Barat</option>' +
                         '<option value="Purwokerto Utara">Purwokerto Utara</option>' +
