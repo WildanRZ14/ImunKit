@@ -65,7 +65,6 @@ $routes->group('administrator', function ($routes) {
 });
 $routes->group('users', static function ($routes) {
     $routes->get('/', 'Users\Profile::index');
-    $routes->get('pendaftaran', 'Users\Pendaftaran::index');
     $routes->get('penjadwalan', 'Users\Penjadwalan::index');
     $routes->get('pemantauan', 'Users\Pemantauan::index');
     $routes->post('pemantauan/authPemantauan', 'Users\Pemantauan::authPemantauan');
@@ -75,7 +74,6 @@ $routes->group('users', static function ($routes) {
     $routes->put('pemantauan/update/(:num)', 'Users\Pemantauan::update/$1');
     $routes->put('pemantauan/updatefromCancel/(:num)', 'Users\Pemantauan::updatefromCancel/$1');
     $routes->delete('pemantauan/delete/(:num)', 'Users\Pemantauan::delete/$1');
-
 });
 /*
  * --------------------------------------------------------------------
