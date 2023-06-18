@@ -46,9 +46,6 @@
                             Solusi tepat untuk menjaga kesehatan buah hati Anda. Anak sehat dan bebas penyakit dengan
                             imunisasi tepat waktu.
                         </h4>
-                        <div class="home-btn mt-5">
-                            <a href="#" class="btn btn-primary shadow-none">Lihat Lebih Lanjut</a>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
