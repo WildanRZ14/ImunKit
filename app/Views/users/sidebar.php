@@ -12,9 +12,9 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url(); ?>/users/pendaftaran" class="nav-link">
-                        <i class="nav-icon fa fa-vcard" style="color: #FFFFFF;"></i>
-                        <p class="text" style="color: #FFFFFF;">Pendaftaran</p>
+                    <a href="<?= base_url(); ?>/users/penjadwalan" class="nav-link">
+                        <i class="nav-icon fa fa-address-book" style="color: #FFFFFF;"></i>
+                        <p class="text" style="color: #FFFFFF;">Penjadwalan</p>
                     </a>
                 </li>
                 <li class="nav-item">
