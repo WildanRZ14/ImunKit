@@ -18,8 +18,7 @@
             <div class="container">
                 <a class="navbar-brand" href="<?= base_url(); ?>"><i class=""></i> ImunKit
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -57,7 +56,7 @@
         </div>
     </section>
     <section class="fitur" id="fitur">
-        <div class="container pt-3">
+        <div class="container-fitur pt-3">
             <h3 class="fw-bold text-primary mt-3 text-center">Fitur</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-6 content mt-5" data-aos="fade-up" data-aos-duration="1000">

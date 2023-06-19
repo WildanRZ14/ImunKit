@@ -20,6 +20,21 @@ body {
     color: #FFFFFF;
 }
 
+.navbar-brand {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+a.nav-link.scrollto.active {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+a.nav-link {
+    min-width: 44px;
+    min-height: 44px;
+}
+
 
 /* style login-start */
 .bgLogin {
@@ -90,26 +105,30 @@ body {
 
 
 /* Landing Page */
-.landingPage{
+.landingPage {
     margin-top: 70px;
     background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
 }
 
-.fitur{
+.fitur {
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
-.about{
+.about {
     background-image: -webkit-linear-gradient(right, #ADE5FF, #62CDFF);
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
-.container{
+.container {
     font-family: 'Poppins', sans-serif;
+}
+
+.container-fitur {
+    text-align: center;
 }
 
 /* dashboard user */
@@ -118,8 +137,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-  }
+}
 
-  .article-body {
+.article-body {
     flex-grow: 1;
-  }
+}
