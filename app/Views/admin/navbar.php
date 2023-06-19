@@ -6,9 +6,4 @@
         </li>
      </ul>
 
-     <ul class="navbar-nav ml-auto">
-        <li class="nav-item d-none d-sm-inline-block">
-           <a href="/login" class="nav-link"><i class="fa-solid fa-door-open"></i>&nbsp;Logout</a>
-        </li>
-     </ul>
   </nav>

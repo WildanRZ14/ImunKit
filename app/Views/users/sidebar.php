@@ -23,7 +23,12 @@
                         <p class="text" style="color: #FFFFFF;">Pemantauan</p>
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a href="<?= base_url(); ?>/" class="nav-link">
+                        <i class="nav-icon fa-solid fa-door-open" style="color: #FFFFFF;"></i>
+                        <p class="text" style="color: #FFFFFF;">Keluar</p>
+                    </a>
+                </li>
         </nav>
         <!-- Menu Sidebar -->
     </div>
