@@ -26,29 +26,21 @@
          <h3 class="mt-5 mb-3 text-center">Data Registrasi Masuk</h3>
          <div>
             <form action="<?= base_url('administrator/authAdm'); ?>" method="post">
-               <div class="mb-3 row">
-                  <label for="email" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10">
-                     <input class="form-control" id="email" name="email" placeholder="Masukkan Email" required>
-                  </div>
+               <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input class="form-control" id="email" name="email" placeholder="Masukkan Email" required>
+               </div>
+               <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input class="form-control" id="username" name="username" placeholder="Masukkan Username" required>
                </div>
                <div class="mb-3 row">
-                  <label for="username" class="col-sm-2 col-form-label">Username</label>
-                  <div class="col-sm-10">
-                     <input class="form-control" id="username" name="username" placeholder="Masukkan Username" required>
-                  </div>
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required>
                </div>
                <div class="mb-3 row">
-                  <label for="password" class="col-sm-2 col-form-label">Password</label>
-                  <div class="col-sm-10">
-                     <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required>
-                  </div>
-               </div>
-               <div class="mb-3 row">
-                  <label for="repassword" class="col-sm-2 col-form-label">Masukkan Ulang Password</label>
-                  <div class="col-sm-10">
-                     <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Masukkan Ulang Password" required>
-                  </div>
+                  <label for="repassword" class="form-label">Masukkan Ulang Password</label>
+                  <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Masukkan Ulang Password" required>
                </div>
                <button type="submit" class="btn btn-primary float-end shadow">Submit</button>
             </form>

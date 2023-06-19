@@ -15,7 +15,7 @@
 <body>
     <section id="beranda">
         <nav class="navbar navbar-expand-lg py-5 mb-4 fixed-top sticky sticky-dark nav-sticky bg-nav">
-            <div class="container">
+            <div class="container inner-beranda">
                 <a class="navbar-brand" href="<?= base_url(); ?>"><i class=""></i> ImunKit
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
         </div>
     </section>
     <section class="fitur" id="fitur">
-        <div class="container-fitur pt-3">
+        <div class=" container container-fitur pt-3">
             <h3 class="fw-bold text-primary mt-3 text-center">Fitur</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-6 content mt-5" data-aos="fade-up" data-aos-duration="1000">

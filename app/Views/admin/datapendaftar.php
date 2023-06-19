@@ -45,8 +45,8 @@
                            <td><?= $row['email']; ?></td>
                            <td><?= $row['password']; ?></td>
                            <td>
-                              <button class="btn btn-sm btn-primary edit-btn" data-id_user="<?= $row['id_user']; ?>">Edit</button>
-                              <button class="btn btn-sm btn-danger delete-btn" data-id_user="<?= $row['id_user']; ?>">Hapus</button>
+                              <button class="btn btn-sm btn-primary edit-btn btn-space" data-id_user="<?= $row['id_user']; ?>"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-sm btn-danger delete-btn" data-id_user="<?= $row['id_user']; ?>"><i class="fas fa-trash"></i></button>
                            </td>
                         </tr>
                      <?php endforeach; ?>

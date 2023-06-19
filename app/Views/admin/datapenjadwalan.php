@@ -47,8 +47,8 @@
                            <td><?= $row['diskripsi']; ?></td>
                            <td><img src="<?= base_url() . '/' . $row['gambar']; ?>" alt="Gambar" width="100"></td>
                            <td>
-                              <button class="btn btn-sm btn-primary edit-btn" data-id_judul="<?= $row['id_judul']; ?>">Edit</button>
-                              <button class="btn btn-sm btn-danger delete-btn" data-id_judul="<?= $row['id_judul']; ?>">Hapus</button>
+                              <button class="btn btn-sm btn-primary edit-btn mb-1" data-id_judul="<?= $row['id_judul']; ?>"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-sm btn-danger delete-btn" data-id_judul="<?= $row['id_judul']; ?>"><i class="fas fa-trash"></i></button>
                            </td>
                         </tr>
                      <?php endforeach; ?>

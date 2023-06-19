@@ -142,3 +142,27 @@ a.nav-link {
 .article-body {
     flex-grow: 1;
 }
+
+@media screen and (max-width: 990px) {
+    .btn-space{
+        margin-bottom: 5px;
+    }
+    .landingPage{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .btn-space1{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .inner-beranda, .landingPage, .fitur, .about{
+        padding: 0 25px;
+    }
+    .article-card{
+        margin: 0 25px;
+    }
+}

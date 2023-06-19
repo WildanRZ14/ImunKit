@@ -22,11 +22,9 @@
          <h3 class="mt-5 mb-3 text-center">Pemantauan</h3>
          <div class="mb-5">
             <form action="<?= base_url('users/pemantauan/authPemantauan'); ?>" method="post">
-               <div class="mb-3 row">
-                  <label for="jenis_imunisasi" class="col-sm-2 col-form-label">Jenis Imunisasi</label>
-                  <div class="col-sm-10">
-                     <input class="form-control" id="jenis_imunisasi" name="jenis_imunisasi" placeholder="Masukkan Jenis Imunisasi" required>
-                  </div>
+               <div class="mb-3">
+                  <label for="jenis_imunisasi" class="form-label">Jenis Imunisasi</label>
+                  <input class="form-control" id="jenis_imunisasi" name="jenis_imunisasi" placeholder="Masukkan Jenis Imunisasi" required>
                </div>
                <button type="submit" class="btn btn-primary float-end shadow">Submit</button>
             </form>
@@ -58,7 +56,7 @@
                                  </button>
                               </td>
                               <td>
-                                 <button class="btn btn-sm btn-primary edit-btn" data-id_pemantauan="<?= $row['id_pemantauan']; ?>">
+                                 <button class="btn btn-sm btn-primary edit-btn btn-space1" data-id_pemantauan="<?= $row['id_pemantauan']; ?>">
                                     <i class="fas fa-edit"></i>
                                  </button>
                                  <button class="btn btn-sm btn-danger delete-btn" data-id_pemantauan="<?= $row['id_pemantauan']; ?>">
@@ -100,7 +98,7 @@
                                  </button>
                               </td>
                               <td>
-                                 <button class="btn btn-sm btn-primary editfromCancel-btn" data-id_pemantauan="<?= $row['id_pemantauan']; ?>">
+                                 <button class="btn btn-sm btn-primary editfromCancel-btn btn-space1" data-id_pemantauan="<?= $row['id_pemantauan']; ?>">
                                     <i class="fas fa-edit"></i>
                                  </button>
                                  <button class="btn btn-sm btn-danger delete-btn" data-id_pemantauan="<?= $row['id_pemantauan']; ?>">
